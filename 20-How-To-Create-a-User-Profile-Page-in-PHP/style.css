@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #29323e;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: white;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    color: #1E1E1E;
+    line-height: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    color: white;
+    line-height: 32px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #161616;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu-main {
+    margin-left: 20px;
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox для выравнивания элементов в ряд */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.menu-member {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox для выравнивания элементов в ряд */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    font-family: Roboto, sans-serif;
+    color: white;
+    align-items: center;
+}
+
+ul {
+
+}
+
+li {
+    margin-right: 20px; /* Отступ между элементами меню */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: white; /* Цвет текста ссылок */
+    padding: 10px; /* Отступы для удобства нажатия */
+}
+
+a:hover {
+    color: #007BFF; /* Цвет текста при наведении */
+}
+
+.header-login-a {
+    display: inline-block; /* Чтобы элемент вел себя как блок, чтобы можно было установить ширину и высоту */
+    padding: 10px 10px; /* Отступы для кнопки (сверху и снизу, слева и справа) */
+    background-color: #007BFF; /* Голубой цвет кнопки */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход для изменения цвета на наведении */
+}
+
+.header-login-a:hover {
+    background-color: #0056b3; /* Темно-голубой цвет при наведении */
+}
+
+.index-intro {
+    position: relative;
+    padding: 258px 0; /* Отступы сверху и снизу */
+}
+
+.index-intro-bg {
+    background: url('img/index-intro-bg.avif') no-repeat center center;
+    background-size: cover; /* Заполнение фона по размеру */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Установите индекс для правильного размещения */
+}
+
+.index-intro-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 50, 62, 0.5); /* Полупрозрачный цвет */
+    z-index: 2; /* Установите индекс для наложения поверх изображения */
+}
+
+.index-intro-bg .wrapper {
+    position: relative;
+    z-index: 3; /* Убедитесь, что содержимое выше фона */
+    display: flex; /* Используем flexbox для создания сетки */
+    justify-content: space-between; /* Задаем отступы между элементами */
+    padding: 80px 80px; /* Отступы по бокам для содержимого */
+}
+
+.index-intro-c1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video {
+    height: 240px;
+    background-image: url('img/video.jpg'); /* Путь к вашему изображению */
+    background-size: cover; /* Заполнение фона по размеру */
+    background-position: center; /* Центрирование изображения */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+.index-intro-c1 p {
+    text-align: left; /* Выравнивание текста по левому краю */
+    border-left: 5px solid #1e90ff; /* Установка ширины и цвета левой границы */
+    padding-left: 20px; /* Добавление отступа для текста */
+}
+
+.index-intro-c2 {
+    flex: 1;
+}
+
+.index-intro-c2 h2 {
+    font-family: Roboto, sans-serif;
+    margin: 40px 0; /* Отступ снизу */
+    font-size: 56px;
+    color: white; /* Цвет текста */
+    text-align: left;
+    padding-left: 40px;
+}
+
+.index-intro-c2 a {
+    display: inline-block; /* Чтобы кнопка сохраняла размеры */
+    padding: 15px 15px; /* Отступы внутри кнопки */
+    background-color: #1e90ff; /* Голубой цвет фона */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    border-radius: 5px; /* Скругленные углы */
+    font-family: Roboto, sans-serif;
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    margin-left: 40px;
+}
+
+.index-intro-c2 a:hover {
+    background-color: #1c86ee; /* Темнее голубой цвет при наведении */
+}
+
+.index-login {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.index-login .wrapper {
+    display: flex;
+}
+
+.index-login-signup {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #1e90ff; /* Установка ширины и цвета левой границы */
+    padding-left: 20px; /* Добавление отступа для текста */
+}
+
+.index-login-signup p {
+    color: gray;
+}
+
+.index-login-signup form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+}
+
+.index-login-signup form input {
+    width: 100%; /* Ширина на 100% */
+    padding: 10px; /* Отступы внутри полей ввода */
+    margin: 5px 0; /* Отступы между полями */
+    border: 1px solid #ccc; /* Серый цвет границы */
+    border-radius: 5px; /* Закругленные края */
+    box-sizing: border-box; /* Учитывать паддинг и бордер в ширине */
+    background-color: #efefef;
+}
+
+.index-login-signup form button {
+    padding: 10px; /* Отступы внутри кнопки */
+    background-color: #007bff; /* Голубой цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем стандартные границы */
+    border-radius: 5px; /* Закругленные края кнопки */
+    cursor: pointer; /* Указываем, что можно кликнуть */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета кнопки */
+}
+
+.index-login-signup form button:hover {
+    background-color: #0056b3; /* Более тёмный цвет при наведении */
+}
+
+.index-login-login {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+}
+
+.index-login-login form {
+    display: flex;
+    flex-direction: column;
+
+}
+

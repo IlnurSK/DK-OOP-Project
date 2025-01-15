@@ -33,6 +33,13 @@ h3 {
     line-height: 32px;
 }
 
+h2 {
+    font-size: 26px;
+    font-family: Roboto, sans-serif;
+    color: white;
+    line-height: 32px;
+}
+
 header {
     width: 100%;
     height: 80px;
@@ -250,8 +257,20 @@ a:hover {
 .index-login-login {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1E1E1E;
     border-radius: 10px;
+    margin-left: 150px;
+    padding: 40px 60px;
+}
+
+.index-login-login h4 {
+    color: white;
+}
+
+.index-login-login p {
+    padding: 10px 0;
 }
 
 .index-login-login form {
@@ -259,4 +278,165 @@ a:hover {
     flex-direction: column;
 
 }
+
+.index-login-login form input {
+    width: 100%; /* Ширина на 100% */
+    padding: 10px; /* Отступы внутри полей ввода */
+    margin: 5px 0; /* Отступы между полями */
+    border: 1px solid #ccc; /* Серый цвет границы */
+    border-radius: 5px; /* Закругленные края */
+    box-sizing: border-box; /* Учитывать паддинг и бордер в ширине */
+    background-color: #efefef;
+}
+
+.index-login-login form button {
+    padding: 10px; /* Отступы внутри кнопки */
+    background-color: #007bff; /* Голубой цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем стандартные границы */
+    border-radius: 5px; /* Закругленные края кнопки */
+    cursor: pointer; /* Указываем, что можно кликнуть */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета кнопки */
+}
+
+footer {
+    background: rgba(41, 50, 62, 0.5);
+    padding: 80px 0;
+}
+
+.profile {
+    position: relative;
+    padding: 258px 0; /* Отступы сверху и снизу */
+}
+
+.profile-bg {
+    background: url('img/index-intro-bg.avif') no-repeat center center;
+    background-size: cover; /* Заполнение фона по размеру */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Установите индекс для правильного размещения */
+}
+
+.profile-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 50, 62, 0.5); /* Полупрозрачный цвет */
+    z-index: 2; /* Установите индекс для наложения поверх изображения */
+}
+
+.profile-bg .wrapper {
+    position: relative;
+    z-index: 3; /* Убедитесь, что содержимое выше фона */
+    display: flex; /* Используем flexbox для создания сетки */
+    justify-content: space-between; /* Задаем отступы между элементами */
+    padding: 80px 80px; /* Отступы по бокам для содержимого */
+}
+
+.profile-info {
+    background-color: #161616;
+    border-radius: 20px;
+    height: 690px;
+}
+
+.profile-info-img {
+    background: url('img/profile-img.jpg') no-repeat center;
+    background-size: cover; /* Заполнение фона по размеру */
+    overflow: hidden; /* Скрывает изображение за пределами контейнера */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.break {
+    height: 300px;
+}
+
+.profile-info-img p {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: bold; /* Делает текст жирным */
+    font-size: 22px;
+}
+
+.follow-btn {
+    background-color: white;  /* Белый фон */
+    color: black;             /* Цвет текста */
+    border: 2px solid #ccc;  /* Светло-серая рамка */
+    border-radius: 35px;      /* Скругление углов */
+    padding: 10px 10px;      /* Внутренние отступы (по вертикали и горизонтали) */
+    font-size: 16px;         /* Размер шрифта */
+    cursor: pointer;         /* Указатель мыши при наведении */
+    transition: background-color 0.3s, border-color 0.3s; /* Анимация перехода */
+    width: auto;
+    display: inline-block;       /* Необходимо для нужного поведения ширины */
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.follow-btn:hover {
+    background-color: #f0f0f0; /* Светло-серый фон при наведении */
+    border-color: #888;        /* Темная рамка при наведении */
+}
+
+.profile-info-about {
+    padding: 10px 20px;
+}
+
+.profile-info-about * {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.profile-intro {
+    background-color: #161616;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 30px 20px;
+}
+
+.profile-intro * {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.profile-posts {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px 20px;
+}
+
+.profile-posts h3 {
+    color: #161616;
+    font-size: 20px;
+}
+
+.profile-post {
+    border-left: 5px solid #1E1E1E; /* Установка ширины и цвета левой границы */
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.profile-post h2 {
+    font-size: 20px;
+    color: #161616;
+}
+
+.profile-post p {
+    font-size: 14px;
+    color: #161616;
+    padding-top: 10px;
+}
+
+
+
+
 

@@ -344,6 +344,7 @@ footer {
     background-color: #161616;
     border-radius: 20px;
     height: 690px;
+    width: 70%;
 }
 
 .profile-info-img {
@@ -457,6 +458,7 @@ footer {
     border-radius: 5px; /* Закругленные края */
     box-sizing: border-box; /* Учитывать паддинг и бордер в ширине */
     background-color: #efefef;
+    font-family: Roboto, sans-serif;
 }
 
 .profile-settings button {
@@ -468,6 +470,7 @@ footer {
     cursor: pointer; /* Указываем, что можно кликнуть */
     font-size: 16px; /* Размер шрифта */
     transition: background-color 0.3s; /* Плавный переход цвета кнопки */
+    font-family: Roboto, sans-serif;
 }
 
 

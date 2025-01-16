@@ -29,7 +29,7 @@ class ProfileInfo extends Dbh {
 
         if(!$stmt->execute(array($profileAbout, $profileTitle, $profileText, $userId))) {
             $stmt = null;
-            header("location: profile.php?error=stmtfailed");
+            header("location: ../profile.php?error=stmtfailed");
             exit();
         }
 

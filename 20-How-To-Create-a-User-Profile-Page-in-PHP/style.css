@@ -374,6 +374,7 @@ footer {
     font-size: 16px;         /* Размер шрифта */
     cursor: pointer;         /* Указатель мыши при наведении */
     transition: background-color 0.3s, border-color 0.3s; /* Анимация перехода */
+    font-family: Roboto, sans-serif;
     width: auto;
     display: inline-block;       /* Необходимо для нужного поведения ширины */
     margin-left: 20px;
@@ -434,6 +435,39 @@ footer {
     font-size: 14px;
     color: #161616;
     padding-top: 10px;
+}
+
+.profile-settings {
+    border-radius: 25px;
+    background-color: #161616;
+    width: 100%;
+    padding: 20px;
+}
+
+.profile-settings * {
+    margin-bottom: 20px;
+}
+
+.profile-settings textarea,
+.profile-settings input {
+    width: 100%; /* Ширина на 100% */
+    padding: 10px; /* Отступы внутри полей ввода */
+    margin: 5px 0 20px; /* Отступы между полями */
+    border: 1px solid #ccc; /* Серый цвет границы */
+    border-radius: 5px; /* Закругленные края */
+    box-sizing: border-box; /* Учитывать паддинг и бордер в ширине */
+    background-color: #efefef;
+}
+
+.profile-settings button {
+    padding: 10px; /* Отступы внутри кнопки */
+    background-color: #007bff; /* Голубой цвет фона кнопки */
+    color: #1E1E1E; /* Цвет текста */
+    border: none; /* Убираем стандартные границы */
+    border-radius: 25px; /* Закругленные края кнопки */
+    cursor: pointer; /* Указываем, что можно кликнуть */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета кнопки */
 }
 
 

@@ -1,11 +1,11 @@
 <?php
 
 
-if (isset($_POST["submit"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Grabbing the data
-    $uid = $_POST["uid"];
-    $pwd = $_POST["pwd"];
+    $uid = htmlspecialchars($_POST["uid"], ENT_QUOTES, 'UTF-8');
+    $pwd = htmlspecialchars($_POST["pwd"], ENT_QUOTES, 'UTF-8');
 
     // Instantiate LoginContr class
     include "../classes/dbh.classes.php";
@@ -16,6 +16,6 @@ if (isset($_POST["submit"])) {
     // Running error handlers and user signup
     $login->loginUser();
 
-    // Going to back to front page
+    // Going back to front page
     header("Location: ../index.php?error=none");
 }

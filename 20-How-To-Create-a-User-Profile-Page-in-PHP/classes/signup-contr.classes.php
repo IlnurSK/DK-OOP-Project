@@ -29,6 +29,13 @@ class SignupContr extends Signup
             header("Location: ../index.php?error=username");
             exit();
         }
+
+        if ($this->invalidEmail() == false) {
+            // echo "Invalid email!";
+            header("Location: ../index.php?error=email");
+            exit();
+        }
+
         if ($this->pwdMatch() == false) {
             // echo "Password don't match!";
             header("Location: ../index.php?error=passwordmatch");
